@@ -1,0 +1,7 @@
+{
+  "name": "ecommerce-platzifakestoreapi-ionicv7.2.0-react",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

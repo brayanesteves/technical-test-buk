@@ -1,0 +1,80 @@
+/* Estilo del contenedor principal */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+}
+
+/* Tarjeta de producto */
+.product-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Efecto de hover en las tarjetas */
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Título del producto */
+.product-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+/* Descripción y precio */
+.product-card p {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Botón */
+.product-card button {
+    background: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product-card button:hover {
+    background: #0056b3;
+}
+
+/* Efecto de sombra en el botón */
+.product-card button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Responsive: Ajusta el diseño en pantallas pequeñas */
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
